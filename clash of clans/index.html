@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="import" href="fonts/Supercell-magic-webfont.ttf">
+    <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/draggable-slider.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="css/imagenes/logo_supercell@2x.png" alt="" class="logo">
+            <ul>
+                <li><a href="">Novedades</a></li>
+                <li><a href="">Por venir</a></li>
+                <li><a href="">Ultimo TH</a></li>
+                <li><a href="">Supertropas</a></li>
+                <li><a href="">Soporte</a></li>              
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+      <div class="maincontenedor">
+        <div class="home">
+          <video width="1920px" height="1080px" autoplay muted loop id="myVideo" class="videofondo">
+          <source src="css/imagenes/fondoprincipal.mp4" type="video/mp4">
+          </video>
+       <img src="css/imagenes/580b57fcd9996e24bc43c51c.png" alt="" class="imagen">
+      </div>    
+
+      </div>
+      <div class="seccion2">
+        <div class="container">
+          <h1>ULTIMAS NOVEDADES</h1>
+          <div id="example" class="draggable-slider">
+          <div class="inner">
+            <div class="slide" style="background-image: url(css/imagenes/Clash-at-Home_thumbnail_builder_906x506.jpg);"></div>
+            <div class="slide" style="background-image: url(css/imagenes/1118864975_1664974596\ \(1\).jpg);"></div>
+            <div class="slide" style="background-image: url(css/imagenes/2098508137_1665146391\ \(1\).jpg);"></div>
+            <div class="slide" style="background-image: url(css/imagenes/balance.jpg);"></div>
+            <div class="slide" style="background-image: url(css/imagenes/dragonraider.png);"></div>
+          </div>
+        </div>
+        </div>
+      </div>
+          <script src="draggable-slider.js"></script>
+          <script>
+            const mySlider = new DraggableSlider('example');
+          </script>
+          <script>
+          try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+              return true;
+            }).catch(function(e) {
+              var carbonScript = document.createElement("script");
+              carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC2JW&placement=wwwcssscriptcom";
+              carbonScript.id = "_carbonads_js";
+              document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+          } catch (error) {
+            console.log(error);
+          }
+          </script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLWL5N9CSM"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LLWL5N9CSM');
+          </script>
+    </main>
+</body>
+</html>
