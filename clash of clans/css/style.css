@@ -69,6 +69,13 @@ nav ul li a{
     position: relative;
     overflow: hidden !important;
 }
+.background{
+    font-size: 200px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    word-spacing: 180px;
+}
 .container h1{
     overflow: hidden !important;
     font-family: 'Clash';
@@ -87,17 +94,37 @@ nav ul li a{
     overflow: hidden !important;
 }
 .slide{
+    word-wrap    : break-word !important;
+    overflow-wrap: break-word !important;
     overflow: hidden !important
 }
 .slide div{
     width: 100%;
-    height: 70%;
+    height: 100%;
     background-size: cover;
 }
-.slide p{
+.contenedortexto{
+    position: relative;
+
+}
+.contenedortexto p{
+    top: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline-block !important;
     color: white;
-    font-size: 40px;
-    font-family: 'Clash';
     position: absolute;
-    bottom: 0;
+    font-size: 25px;
+    font-family: 'Clash';
+}
+.seccion3{
+    width: 100%;
+    height: 700px;
+
+}
+.imagenarquera{
+    background-image: url(imagenes/bg_hero_games.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 700px;
 }
