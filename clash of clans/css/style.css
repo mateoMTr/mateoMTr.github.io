@@ -8,16 +8,19 @@
     src: url(fonts/Valorant\ Font.ttf);
 }
 *{
-   overflow-x: hidden;
-    padding: 0;
-    margin: 0;
-}
+    overflow-x: hidden;
+     padding: 0;
+     margin: 0;
+ }
 nav{
     position: relative;
     font-family: 'Noto Sans', sans-serif;
     width: 100%;
     height: auto;
-    background-color:black ;
+    background-color: transparent;
+    z-index: 180;
+    position: absolute;
+    top: 0;
 }
 nav ul{
     list-style: none;
@@ -39,6 +42,22 @@ nav ul li a{
     text-decoration: none;
     font-size: 15px;
 }
+nav ul li a:hover{
+    color: yellow;
+}
+header nav li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+header nav li:hover::after{
+  width: 100%;
+  transition: 1s;
+}
 .logo{
     position: relative;
     left: 0;
@@ -49,7 +68,7 @@ nav ul li a{
 .home{
     overflow: hidden;
     position: relative;
-    height: 900px;
+    height: 950px;
 }
 .imagen{
     position: absolute;
@@ -59,27 +78,76 @@ nav ul li a{
     height: 200px;
     width: 400px;
 }
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid white;
+  position: absolute;
+  left: 49%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid yellow;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
 .lead { font-size: 1.5rem; font-weight: 300; }
 .container { margin: 150px auto; text-align: center; }
 .btn { padding: 1.25rem; border: 0; border-radius: 3px; background-color: #4F46E5; color: #fff; cursor: pointer; }
 .seccion2{
-  background-color: black;
+  background-color: white
 }
 .seccion2{
     position: relative;
     overflow: hidden !important;
 }
 .background{
-    font-size: 200px;
+    font-size: 240px;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px black;
     position: absolute;
     word-spacing: 180px;
+    left: 0;
+    top: 0;
 }
 .container h1{
     overflow: hidden !important;
     font-family: 'Clash';
-    color: #fff;
+    color: black;
     position: absolute;
     left: 15%;
     top: 10%;
@@ -93,19 +161,15 @@ nav ul li a{
 .inner{
     overflow: hidden !important;
 }
-.slide{
+#diapositiva{
     word-wrap    : break-word !important;
     overflow-wrap: break-word !important;
     overflow: hidden !important
 }
-.slide div{
+#diapositiva div{
     width: 100%;
     height: 100%;
     background-size: cover;
-}
-.contenedortexto{
-    position: relative;
-
 }
 .contenedortexto p{
     top: 0;
@@ -122,9 +186,356 @@ nav ul li a{
     height: 700px;
 
 }
-.imagenarquera{
+.seccion3{
     background-image: url(imagenes/bg_hero_games.jpg);
     background-size: cover;
     width: 100%;
     height: 700px;
+}
+
+body {
+    overflow:hidden !important;
+    color: white!important;
+  }
+.inner{
+    background-color: white !important;
+}
+  #myCarousel{
+    overflow: hidden;
+  }
+  .carousel-inner{
+    overflow: hidden;
+  }
+  
+  
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  .seccion4 *{
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .carousel-item{
+    height: 700px;
+    background-image: url(img);
+  }
+  .container{
+    background-color: white !important;
+  }
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* rtl:end:ignore */
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  
+  #heroe{
+    position: relative;
+    left: 0 !important;
+    display: flex;
+    height: 100%;
+    width: 500px;
+  }
+  .reyarquera{
+    width: 350px !important;
+  }
+  .txtheroe1{
+    height:200px;
+    width: 700px;
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    left: 40%;
+    background-color: transparent;
+  }
+  .txtheroe2{
+    height:200px;
+    width: 700px;
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    left: 40%;
+    background-color: transparent;
+  }
+  .tituloheroe{
+    height:60px;
+    width: 500px;
+    position: absolute;
+    z-index: 50;
+    bottom: 0;
+    left: 0;
+    background-color:transparent;
+  }
+  .txtheroe1 p{
+    font-family: 'Clash';
+    color: white;
+    font-size: 20px;
+
+  }
+  .txtheroe2 p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Clash';
+  }
+  .seccion3{
+    text-align: center;
+  }
+  .seccion3 h1, h2, p{
+    color: black;
+    position: relative;
+    margin: 90px;
+  }
+  .seccion3 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-family: 'Clash';
+  }
+  .seccion3 h2{
+    font-family: 'Clash';
+  }
+  .seccion3 p{
+    font-size:25px;
+    font-family: 'Clash';
+    margin: 100px;
+  }
+  .seccion3 *{
+    overflow: hidden;
+  }
+  .seccion5 *{
+    overflow: hidden !important;
+  }
+ .seccion5{
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+
+}
+.superdragon{
+  position: absolute;
+  z-index: 50;
+  top: -50%;
+  left: 38%;
+}
+.arroja{
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  z-index: 50;
+  bottom: -15%;
+  left: -7%;
+}
+.seccion5 h1{
+  position: absolute;
+  top: 0%;
+  color: goldenrod;
+  font-family: 'Clash';
+  z-index: 120;
+font-size: 70px;
+text-shadow: 2px 2px white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+footer *{
+  overflow: hidden;
+}
+footer{
+  position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+  }
+  
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+  }
+  
+  .socials a:hover i{
+    color: white;
+  }
+  
+  .footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+  padding-bottom: 40px;
+    text-align: center;
+  }
+  
+  .footer-bottom p{
+  float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  
+  .footer-bottom p a{
+  color:white;
+  font-size: 16px;
+  text-decoration: none;
+  }
+  
+  .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+  }
+  
+  .footer-menu{
+  float: right;
+  }
+  
+  .footer-menu ul{
+  display: flex;
+  }
+  
+  .footer-menu ul li{
+  padding-right: 10px;
+  display: block;
+  }
+  
+  .footer-menu ul li a{
+  color: rgb(178, 178, 178);
+  text-decoration: none;
+  }
+  
+  .footer-menu ul li a:hover{
+  color: white;
+  }
+  
+@media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+}
+footer p{
+  position: absolute;
+  left: -4%;
+  top: 45%;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

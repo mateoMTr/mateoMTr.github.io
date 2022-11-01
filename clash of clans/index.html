@@ -9,6 +9,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/draggable-slider.css"/>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../clash of clans/css/imagenes/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link href="../clash of clans/css/carousel.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -32,61 +55,214 @@
           <source src="css/imagenes/fondoprincipal.mp4" type="video/mp4">
           </video>
        <img src="css/imagenes/580b57fcd9996e24bc43c51c.png" alt="" class="imagen">
+       <a href="#sec-2">
+        <div class="scroll-down"></div>
+      </a>
       </div>    
 
       </div>
-      <div class="seccion2">
+      <div class="seccion2" id="sec-2">
         <div class="container">
           <div class="titulo">
-            <h1>ULTIMAS NOVEDADES</h1>
+            <h1 data-aos="fade-right">ULTIMAS NOVEDADES</h1>
           <hr>
           <p class="background">CLASH OF CLANS</p>
           </div>
-          <div id="example" class="draggable-slider">
+          <div id="example" class="draggable-slider" data-aos="fade-right">
           <div class="inner">
-            <div class="slide">
+            <div class="slide" id="diapositiva">
               <div style="background-image: url(css/imagenes/Clash-at-Home_thumbnail_builder_906x506.jpg);"></div>
-              <div class="contenedortexto"><p>Servidor en mantenimiento por la nueva actualizacion no se desespere</p>
-                <h3>26/10/2022</h3></div>  
+              <div class="contenedortexto"></div>  
                 
 
             </div>
-            <div class="slide">
+            <div class="slide" id="diapositiva">
               
             <div style="background-image: url(css/imagenes/1118864975_1664974596\ \(1\).jpg);"></div>
-             <div class="contenedortexto"><p>Lleva tu aldea al maximo potencial con el nuevo nivel de ayuntamiento</p>
-              <h3>25/10/2022</h3></div>
+             <div class="contenedortexto"></div>
   
 
             </div>
-            <div class="slide">
+            <div class="slide" id="diapositiva">
               <div style="background-image: url(css/imagenes/2098508137_1665146391\ \(1\).jpg);"></div>
-              <div class="contenedortexto"><p>Nuestros heroes nunca estuvieron tan bien acompañados como con nuestras nuevas mascotas</p>
-                <h3>25/10/2022</h3></div>
+              <div class="contenedortexto"></div>
               
             </div>
-            <div class="slide">
+            <div class="slide" id="diapositiva">
               <div style="background-image: url(css/imagenes/balance.jpg);"></div>
-              <div class="contenedortexto"> <p>Ultimos cambios de balance y IA de las tropas</p>
-                <h3>25/10/2022</h3></div>
+              <div class="contenedortexto"> </div>
                 
 
               
             </div>
-            <div class="slide">
+            <div class="slide" id="diapositiva">
               <div style="background-image: url(css/imagenes/dragonraider.png);"></div>
-              <div class="contenedortexto"><p>Destruye los cielos con nuestro nuevo amigo el larry matadragones</p>
-              <h3>10/10/2022</h3>></div>          
+              <div class="contenedortexto"></div>          
             </div>
       </div>
         </div>
         </div>
       </div>
 
-       <section class="seccion3">
-        <div class="imagenarquera"></div>
+      <section class="seccion4">
+        <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel" >
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            
+          </div>
+          <div class="carousel-inner" >
+            <div class="carousel-item active" >
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+      
+              <div class="container">
+                <div class="carousel-caption text-start">
+
+                  <img data-aos="fade-up" src="css/imagenes/Barbarian_King_info.JPG" alt="" class="reybarbaro" id="heroe">
+                  <div class="tituloheroe">
+                    <h1 data-aos="fade-right" style="color: white;">Rey bárbaro</h1>
+                  </div>
+                  <div class="txtheroe1">                  
+                    <p data-aos="fade-right">Este colosal enemigo absorbe daño en cantidades ingentes y aniquila todo a su paso. Defiende su territorio con uñas y dientes y, con su habilidad Puño de hierro desbloqueada, se deja invadir por una rabia que lo ayuda a lanzar furiosos ataques.</p>
+                  </div>
+                  <div class="txtheroe2">
+                    <p data-aos="fade-right">El Rey bárbaro es un Bárbaro más grande, más fuerte, más agresivo, más impresionante y más poderoso. Es el primer héroe que se desbloquea en el Ayuntamiento nivel 7. Es invocado automáticamente una vez que se construye el Altar del rey bárbaro, que cuesta 5.000 Elixir oscuro. Por lo tanto, el Almacén de elixir oscuro es necesario para conseguirlo.</p>              
+                  </div>
+                  <div class="tituloheroe"></div>
+                  <div class="txtheroe1"></div>
+                  <div class="txtheroe2"></div>
+
+
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+      
+              <div class="container">
+                <div class="carousel-caption">
+
+                  <img src="css/imagenes/Archer_Queen2_info.JPG" alt="" class="reyarquera" id="heroe">
+                  <div class="tituloheroe" >
+                    <h1 data-aos="fade-right" style="color: white;">Reina </h1>
+                  </div>
+                  <div class="txtheroe1" >
+                    <p data-aos="fade-right"> Aunque no goza de mucha salud, esta hábil cazadora domina una fuerza destructiva sin parangón. Cuando defiende su territorio, dispara a escondidas contra sus enemigos, y con su habilidad Manto real desbloqueada, es capaz de infligir terribles daños con sus sigilosos ataques</p>
+                   
+                  </div>
+                  <div class="txtheroe2" >
+                    <p data-aos="fade-right">La Reina arquera es esencialmente una versión más poderosa de la Arquera. Es el segundo héroe que se desbloquea en el nivel 9 del Ayuntamiento. Además de poseer mucho más daño y puntos de golpe, la Archer Queen también dispara 1.5 casillas más lejos que una Archer normal (5 casillas en lugar de 3.5 casillas).
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+      
+              <div class="container">
+                <div class="carousel-caption text-end">
+
+                  <img src="css/imagenes/Grand_Warden_info.JPG" alt="" class="grancentinela" id="heroe">
+                  <div class="tituloheroe" >
+                    <h1 data-aos="fade-right" style="color: white;">Centinela</h1>
+                    
+
+                  </div>
+                  <div class="txtheroe1" >
+                    <p data-aos="fade-right">"Este veterano estratega sigue a los grupos de tropas aliadas y, gracias a su aura vital, les proporciona puntos de vida adicionales. Al atacar, puede trepar muros o volar, y al defender toma forma de torre. Con la habilidad del libro eterno desbloqueada, puede hacer que las tropas cercanas sean inmunes al daño"
+                    </p>
+                    
+                  </div>
+                  <div class="txtheroe2" >
+                    <p data-aos="fade-right">El Gran centinela se parece a un mago, pero con un aspecto más viejo. Va vestido con túnica y capa moradas. Rodeado de oro en el cuello, lleva una especie de corona en la cabeza. Tiene un libro grueso y una simple vara de madera y cristal.
+                      En el nivel 10, su corona se vuelve dorada.</p>
+                    
+
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+      
+              <div class="container">
+                <div class="carousel-caption text-end">
+
+                  <img src="css/imagenes/Royal_Champion_info.JPG" alt="" class="royalechampion" id="heroe">
+                  <div class="tituloheroe" >
+                    <h1 data-aos="fade-right" style="color: white;">Luchadora</h1>
+                    
+                  </div>
+                  <div class="txtheroe1" >
+                    <p data-aos="fade-right">Saltar el muro ¡ir a por ellos! La luchadora real solo teme cuatro cosas, y el enemigo no es una de ellas. Ataca con su lanza a corta distancia y arroja su escudo para debilitar las defensas cuando desbloquea la habilidad del escudo real.</p>
+                    
+                  </div>
+                  <div class="txtheroe2" >
+                    <p data-aos="fade-right">    La Luchadora real es el cuarto héroe de la Aldea Principal. Tiene un Nvl moderadamente alto, una salud moderada, y apunta a las defensas. También puede saltar las murallas, como el Montapuercos.</p>
+                
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
        </section>
+
+       <section class="seccion3">
+        <div class="imagenarquera"></div>
+        <h1 data-aos="fade-up">Mejorando desde 2012</h1>
+        <h2 data-aos="fade-up">POR VENIR</h2>
+        <p data-aos="fade-up">-Nuevas tropas <br>
+           -La aldea del clan <br>
+           -Liga de clanes <br>
+           -Reduccion en barracas
+           -Nuevos hechizos</p>
+
+       </section>
+
+       <section class="seccion5">
+        <video width="1920px" height="1080px" autoplay muted loop id="myVideo" class="videofondo">
+          <source src="css/imagenes/dragone_Trim.mp4" type="video/mp4">
+          </video>
+          <img src="css/imagenes/Super_Dragon_info.jpg" h1 data-aos="fade-left"  data-aos-duration="6000" alt="" class="superdragon">
+          <img src="css/imagenes/Flame_Flinger_info.jpg" h1 data-aos="fade-right" alt="" class="arroja">
+
+          <h1 data-aos="fade-right">LLEGA LA ACTUALIZACION DE VERANO</h1>
+       </section>
+       <footer>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+      <p>Mateo Silveira - Gordo Benedetti</p>
+       </footer>
+       
+       
+          <script src="../clash of clans/bootstrap.bundle.min.js"></script>
           <script src="draggable-slider.js"></script>
           <script>
             const mySlider = new DraggableSlider('example');
@@ -111,6 +287,9 @@
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-LLWL5N9CSM');
+          </script>
+          <script>
+            AOS.init();
           </script>
     </main>
 </body>
