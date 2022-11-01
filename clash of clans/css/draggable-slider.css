@@ -1,7 +1,4 @@
-/** 
- * If you don't use the default classes, you're gonna have to rename
- * these CSS selectors.
- */
+
 .draggable-slider {
   position: relative;
   overflow: hidden;
@@ -29,9 +26,6 @@
   transition: none;
 }
 
-/**
- * These styles can be adapted as you see fit.
- */
 .draggable-slider .inner .slide {
   width: 50vw;
   height: 100%;
